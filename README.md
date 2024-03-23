@@ -1,4 +1,4 @@
-<h1>Steps for Running Code in your Broweser</h1>
+<h1>Steps for Running Code on your Machine</h1>
 
 For Running this code on your operating system you should follow these steps
 <ul>
