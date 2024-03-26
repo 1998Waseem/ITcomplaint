@@ -53,34 +53,33 @@
 <!--- Delete modal --->
 
   <!--statrt of Edit form moal  -->
-  <div class="modal fade" id="editmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel"> Edit Data </h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-
-                <form id="loginform" onsubmit="return validateupdateform()" method="POST" action="tech_updaterecord.php">
-                <div class="form-group">
-                      <input type="hidden" class="form-control" id="update_id" aria-describedby="emailHelp" name="updateid">
-                    </div>    
-
-                    <div class="form-group">
-                      <label for="exampleInputPassword1">Status</label>
-                      <input type="text" class="form-control" id="updatestatus" name="Status">
-                      <span id="errorupdatestatus" style="color:red"></span>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-secondary" name="updatedata" style="width: 100%;">Update</button>
-                  </form>
-
+  <div class="modal fade" id="editmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"> Edit Data </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
+
+            <form id="loginform" onsubmit="return validateupdateform()" method="POST" action="tech_updaterecord.php">
+                <div class="form-group">
+                    <input type="hidden" class="form-control" id="update_id" aria-describedby="emailHelp" name="updateid">
+                </div>    
+
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Status</label>
+                    <input type="text" class="form-control" id="updatestatus" name="userStatus">
+                    <span id="errorupdatestatus" style="color:red"></span>
+                </div>
+                
+                <button type="submit" class="btn btn-secondary" name="updatedata" style="width: 100%;">Update</button>
+            </form>
         </div>
     </div>
+</div>
+
 
 <!--End of Edit form moal  -->
     <div class="container-fluid">
@@ -123,9 +122,6 @@ while($row = mysqli_fetch_array($result)) {
                         <td><?php echo $row["userStatus"]; ?></td>
                         <td>
                           <button type="button" class="btn btn-success btn-sm editbtn">Edit</button>
-                        </td>
-                        <td>
-                        <button type="button" class="btn btn-danger btn-sm deletebtn">Delete</button>
                         </td>
                       </tr>
                     </tbody>
@@ -225,12 +221,12 @@ echo "No result found";
 
             console.log(data);
 
-               $('#update_id').val(data[0]);
-                $('#updatename').val(data[1]);
-                $('#updatemail').val(data[2]);
-                $('#updatelocation').val(data[3]);
-                $('#updatedesc').val(data[4]);
-                $('#updateStatus').val(data[5]);
+              //  $('#update_id').val(data[0]);
+                $('#updatename').val(data[0]);
+                $('#updatemail').val(data[1]);
+                $('#updatelocation').val(data[2]);
+                $('#updatedesc').val(data[3]);
+                $('#updateStatus').val(data[4]);
 }); 
 });
           </script>

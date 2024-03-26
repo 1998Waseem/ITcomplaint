@@ -122,7 +122,7 @@
                         <th scope="col">Location</th>
                         <th scope="col">Description</th>
                         <th scope="col">Status</th>
-                        <th scope="col">Action</th>
+                        <!-- <th scope="col">Action</th> -->
                       </tr>
                     </thead>
                     <?php
@@ -137,12 +137,12 @@ while($row = mysqli_fetch_array($result)) {
                         <td><?php echo $row["userlocation"]; ?></td>
                         <td><?php echo $row["userDescription"]; ?></td>
                         <td><?php echo $row["userStatus"]; ?></td>
-                        <td>
+                        <!-- <td>
                           <button type="button" class="btn btn-success btn-sm editbtn">Edit</button>
                         </td>
                         <td>
                         <button type="button" class="btn btn-danger btn-sm deletebtn">Delete</button>
-                        </td>
+                        </td> -->
                       </tr>
                     </tbody>
                     <?php
