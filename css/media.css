@@ -1,0 +1,79 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .jumbotron_class{
+    display: none !important;
+  }
+  .jumbotron_class_m{
+    display: block !important;
+  }
+  .desc{
+    display: none !important;
+  }
+  .descm{
+    display: block !important;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .jumbotron_class{
+        display: none !important;
+      }
+      .jumbotron_class_m{
+        display: block !important;
+      }
+      .desc{
+        display: none !important;
+      }
+      .descm{
+        display: block !important;
+      }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .jumbotron_class{
+        display: block !important;
+      }
+      .jumbotron_class_m{
+        display: none !important;
+      }
+      .desc{
+        display: block !important;
+      }
+      .descm{
+        display: none !important;
+      }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .jumbotron_class{
+        display: block !important;
+      }
+      .jumbotron_class_m{
+        display: none !important;
+      }
+      .desc{
+        display: block !important;
+      }
+      .descm{
+        display: none !important;
+      }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .jumbotron_class{
+        display: block !important;
+      }
+      .jumbotron_class_m{
+        display: none !important;
+      }
+      .desc{
+        display: block !important;
+      }
+      .descm{
+        display: none !important;
+      }
+}
